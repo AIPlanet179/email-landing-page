@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>الفضائي الهارب The fleeing alien</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="infox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudeflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.main.css">
+  </head>
+  <body bgcolor="black" > 
+    <!-- mp4, webM, and ogg -->
+    <label class="logo" >AIPlanet</label>
+    <nav>
+      <ul>
+        <li class="active" > <a class="nav-link" href="#من نحن" style="color: white;">من نحن</a> </li>
+        <li class="active" > <a class="nav-link" href="#عرض للعبة " style="color: white;">عرض للعبة </a> </li>
+        <li class="active" > <a class="nav-link" href="#تحميل" style="color: white;">تحميل</a> </li>
+        <li class="active" class="nav-item"><a   class="nav-link" href="#تواصل معنا" style="color: white;">تواصل معنا</a> </li>
+      </ul>
+    </nav>
+    <h1 style="color:rgb(252, 250, 250)" align="center">من نحن</h1>
+    <div class="containare">
+    <center><img src="My project-1 (5).png" height="300px" width="300px" alt="نحن فريق يتكون من شخصين آدم نزيه و أنس العيادي، مبرمجين لايتجاوز عمرهما 16 ،يبرمجان المواقع و الألعاب وأول لعبة لهما معا هي لعبة الفضائي الهارب "></center>
+    <div class="text" style="color: rgb(255, 255, 255);">
+        نحن فريق يتكون من شخصين آدم نزيه و أنس العيادي، مبرمجين لايتجاوز عمرهما 16 ،يبرمجان المواقع و الألعاب وأول لعبة لهما معا هي لعبة الفضائي الهارب
+    </div>
+      </div>
+    <h1 style="color: white;" align="center">عرض للعبة</h1>
+    <center><video controls src="videocompress-093-lv_0_20230316090154.mp4"  heigth="800px" width="500px" ></video></center>
+    <canvas id="canvasSquare, triangle and circle move randomly in htmlSquare, triangle and circle move randomly in html"></canvas>
+    <center><h1 style="color: white;">تحميل</h1></center>
+   <center><a href="" download class="download-btn">تحميل
+    <i class="fa-solid fa-download"></i>
+  </a></center>
+  <script src="scripts" src="main.js"></script>
+    <div class="square"></div>
+    <style>
+    .square
+    {
+      height: 30px;
+      width: 30px;
+      background-color: rgb(97, 246, 241);
+    }
+   </style>
+   <style>
+    @keyframes move
+    {
+      0%  {transform: translateY(0);}
+      25% {transform: translateX(0);} 
+      50% {transform: translateY(-500px);}
+     75%  {transform: translateX(800px);}
+     100% { transform: translateX(0);
+           transform: translateY(0);}
+    }
+    .square
+    {
+      animation: move 5s ease-in-out infinite;
+    }
+   </style>
+    <br>
+    <div class="triangle"></div> 
+    <style>
+    .triangle
+    {
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 100px rgb(61, 210, 255);
+    }
+    <style>
+    @keyframes move
+    {
+      0% { transform: translateX(0);}
+      25% {transform: translateY(0);} 
+      50% { transform: translateX(500px);}
+     75%  {transform: translateY(-800px); }
+      100% { transform: translateX(0);
+           transform: translateY(0);}
+    }
+    .triangle
+    {
+      animation: move 5s ease-in-out infinite;
+    }
+    </style>
+    <br>
+    <div class="circle"></div>
+    <style>
+    .circle
+    {
+      height: 30px;
+      width: 30px;
+      background-color: #8fffa3; 
+      border-radius: 20%;
+    } 
+    </style>
+    <style>
+      @keyframes move
+      {
+        0% { transform: translateX(0);}
+        25% {transform: translateY(0);} 
+        50% { transform: translateY(1000px);}
+       75%  {transform: translateX(-500px); }
+        100% { transform: translateX(0);
+             transform: translateY(0);}
+      }
+      .circle
+      {
+        animation: move 5s ease-in-out infinite;
+      }
+      </body>
+  </html>   
